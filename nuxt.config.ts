@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/eslint', 'nuxt-open-fetch'],
+  css: ['~/assets/scss/main.scss'],
   eslint: {
     config: {
       stylistic: true,

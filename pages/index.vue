@@ -4,7 +4,13 @@ const { data } = await usePets('/pet/{petId}', { path: { petId: 2 } })
 </script>
 
 <template>
-  aaa
-  {{ data?.name }}
-  bbb
+  <div :class="$style.foo">
+    {{ data?.name }}
+  </div>
 </template>
+
+<style module lang="scss">
+.foo {
+  background-color: aqua;
+}
+</style>
